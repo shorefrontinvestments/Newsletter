@@ -130,3 +130,29 @@ h1 {
 .night-mode .night-mode-label button:hover {
     background-color: #666;
 }
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Increase base font size for smaller screens */
+    }
+
+    h1 {
+        font-size: 28px; /* Larger heading for better readability */
+    }
+
+    .subtitle, .date {
+        font-size: 14px; /* Adjust subtitle and date text size */
+    }
+
+    .title {
+        font-size: 18px; /* Increase size for clickable titles */
+    }
+
+    .container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .newsletter-item {
+        padding: 15px 0; /* Adjust newsletter item padding */
+    }
+}
