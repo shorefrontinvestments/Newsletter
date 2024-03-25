@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0; /* You might want to remove this if the image covers the entire page */
+    background-image: url('daybackground.jpg'); /* Default day background image */
+    background-size: cover; /* Cover the entire page with the background image */
+    background-position: center; /* Center the background image */
+    margin: 0;
+    transition: background-image 0.5s ease-in-out; /* Smooth transition for background image change */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.85); /* White with slight opacity */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+}
+h1 {
+    margin: 0;
+    letter-spacing: 0.1em;
+    text-align: left;
+    width: 100%;
+}
+.subtitle, .night-mode-label {
+    margin: 0;
+}
+.subtitle {
+    align-self: flex-start;
+    margin-top: 5px;
+    width: 100%;
+}
+.night-mode-label {
+    order: 2; /* Ensures it stays on the right */
+    flex-grow: 1;
+    text-align: right;
+    font-size: 0.9em; /* Adjust as needed */
+}
+.newsletter-item {
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+    width: 100%;
+}
+.newsletter-item:last-child {
+    border-bottom: none;
+}
+.date {
+    color: #666;
+    font-size: 0.9em;
+}
+.title {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+}
+.title:hover {
+    background-color: #007bff;
+    color: white;
+    padding: 2.5px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.newsletter-item:hover .date {
+    transform: translateY(-3px);
+    transition: transform 0.3s ease;
+}
+/* Night mode styles */
+.night-mode {
+    background-color: #2c3e50; /* This might be overridden by the image, so you can adjust as needed */
+    background-image: url('nightbackground.jpg'); /* Night mode background image */
+    color: #ecf0f1;
+}
+.night-mode .container {
+    background-color: rgba(52, 73, 94, 0.85); /* Darker color with slight opacity */
+    color: #ecf0f1;
+}
+.night-mode .title {
+    color: #1abc9c;
+}
+.night-mode .title:hover {
+    background-color: #16a085;
+    color: white;
+}
+.night-mode .date {
+    color: #bdc3c7;
+}
+.night-mode .night-mode-label {
+    color: #ecf0f1; /* Or any color that fits your night mode theme */
+}
+.night-mode-label button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.night-mode-label button:hover {
+    background-color: #45a049;
+}
+
+.night-mode .night-mode-label button {
+    background-color: #555;
+    color: #ddd;
+}
+
+.night-mode .night-mode-label button:hover {
+    background-color: #666;
+}
